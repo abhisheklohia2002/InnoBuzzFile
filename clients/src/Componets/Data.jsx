@@ -19,12 +19,13 @@ try {
 
   const res = await Data.json();
 console.log(res)
-  setdata(...data,res)
+  setdata([...data,res])
 
 } catch (error) {
   console.log(error)
 }
 }
+
 
 useEffect(()=>{
   getRequest()
